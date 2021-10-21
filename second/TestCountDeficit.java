@@ -29,6 +29,28 @@ class TestCountDeficit {
 		int test2 = test.countDeficit("KPNPK","NNNNN");
 				assertEquals(0, test2);
 	}	
+	@Test
+	void shortSecondWins() {
+		Part2 test=new Part2();
+		
+		int test1 =test.countDeficit("KNPPNKKK","PKNNKPPP");
+		assertEquals(8, test1);
+	}
+	@Test
+	void longDraw(){
+		Part2 test=new Part2();
+		
+		int test1= test.countDeficit("KPNPKKNPKNPPKNNPPKNPPNPKNNPPKNPPNKPNPKKNPKNP","PKNNPPKNPPNKPNPKKNPKNPKPNPKKNPKNPPKNNPPKNPPN");
+		assertEquals(0, test1);
+		 
+	}	
+	@Test
+	void longOneWins() {
+		Part2 test = new Part2();
+		
+		int test1 = test.countDeficit("NKPPPPKPNPKKNPKNPPKNNPPKNPPNPKNNPPKNPPNKPNPKKNPKNP","PNKKKKPKNNPPKNPPNKPNPKKNPKNPKPNPKKNPKNPPKNNPPKNPPN");
+		assertEquals(6,test1);
+	}
 	
 	
 }
