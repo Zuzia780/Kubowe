@@ -28,9 +28,7 @@ class TestsumOfPrime {
 		
 		int test1 = test.sumOfPrime(10000);
 		assertEquals(5736396, test1);
-		
-		int test2 = test.sumOfPrime(10000000);
-		assertEquals(5736396, test2);
+
 		
 	}
 	
